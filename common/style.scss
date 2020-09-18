@@ -7702,3 +7702,26 @@ header .main-menu {
         display: none;
     }
 }
+
+
+/* ---------------------------------
+3. HEADER
+--------------------------------- */
+
+#container-head {
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: space-between;
+    margin: auto;
+    flex-wrap: nowrap
+}
+
+.left-area,
+.right-area,
+.main-menu {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    align-items: center;
+}
