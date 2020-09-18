@@ -629,7 +629,6 @@ section {
 .heading-img {
   height: auto;
   width: 15%;
-  margin-bottom: 100px;
 }
 
 .story-area {
@@ -7481,6 +7480,99 @@ header .main-menu {
   text-align: center;
 }
 
+/* VAROUSSELLE IMG */
+#box-img {
+  display: block;
+  width: 80%;
+  margin: auto;
+}
+
+.diap {
+  /* modifiable */
+  float: left;
+  width: 48%;
+  margin: 1%;
+  /* pas modifiable */
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: 0;
+  border-radius: 30px;
+}
+
+.diap img {
+  /* pas modifiable */
+  width: 100%;
+  font-size: 1rem;
+}
+
+/* base de l'appel de l'animation :
+
+ x = nombre d'image à faire défiler.
+.oX {
+  text-indent: -X00%;
+  animation: diapo 10s infinite steps(X);
+}
+.oX.slide {
+  text-indent: -X00%;
+  animation: diapo 10s infinite linear;
+}
+*/
+.o5 {
+  text-indent: -500%;
+  -webkit-animation: diapo 20s infinite steps(5);
+          animation: diapo 20s infinite steps(5);
+}
+
+.o6 {
+  text-indent: -600%;
+  -webkit-animation: diapo 20s infinite steps(6);
+          animation: diapo 20s infinite steps(6);
+}
+
+.o5.slide {
+  text-indent: -500%;
+  -webkit-animation: diapo 20s infinite linear;
+          animation: diapo 20s infinite linear;
+}
+
+.o6.slide {
+  text-indent: -600%;
+  -webkit-animation: diapo 20s infinite linear;
+          animation: diapo 20s infinite linear;
+}
+
+.o8 {
+  text-indent: -800%;
+  -webkit-animation: diapo 25s infinite steps(8);
+          animation: diapo 25s infinite steps(8);
+}
+
+.o8.slide {
+  text-indent: -800%;
+  -webkit-animation: diapo 25s infinite linear;
+          animation: diapo 25s infinite linear;
+}
+
+.rtl {
+  /* pas modifiable */
+  direction: rtl;
+}
+
+@-webkit-keyframes diapo {
+  /* pas modifiable */
+  to {
+    text-indent: 0;
+  }
+}
+
+@keyframes diapo {
+  /* pas modifiable */
+  to {
+    text-indent: 0;
+  }
+}
+
+/* CAROUSSELLE IMG */
 @media screen and (min-width: 950px) {
   #entete {
     display: -webkit-box;
