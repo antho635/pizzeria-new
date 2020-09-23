@@ -7764,3 +7764,15 @@ header .main-menu {
     color: #d81b60;
     /* Add a dark-red background on hover */
 }
+
+@media screen and (max-width: 500px) {
+    ul.selecton {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: auto;
+        text-align: center;
+        font-size: 1.2em;
+    }
+}
