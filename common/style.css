@@ -605,7 +605,6 @@ section {
 .heading {
   position: relative;
   text-align: center;
-  margin-bottom: 70px;
 }
 
 .heading-img {
@@ -7493,7 +7492,7 @@ header .main-menu {
   display: block;
   position: absolute;
   width: 186px;
-  height: 130px;
+  height: auto;
   left: 10px;
   top: 10px;
   background: black;
