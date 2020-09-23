@@ -7608,14 +7608,14 @@ header .main-menu {
 }
 
 #carousel img {
-    -webkit-filter: grayscale(1);
+    filter: grayscale(80%);
     cursor: pointer;
     transition: all .5s ease;
     background-size: cover;
 }
 
 #carousel img:hover {
-    -webkit-filter: grayscale(0);
+    filter: contrast(150%);
     transform: scale(1.2, 1.2);
 }
 
