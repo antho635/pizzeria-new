@@ -7765,14 +7765,52 @@ header .main-menu {
     /* Add a dark-red background on hover */
 }
 
-@media screen and (max-width: 500px) {
+
+/*======== liste pizza ========*/
+
+ul.selecton {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.l1 {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin: auto;
+}
+
+.liste-pizza {
+    display: flex;
+    width: 25%;
+    margin: auto;
+    justify-content: center;
+    align-self: center;
+}
+
+@media screen and (max-width: 950px) {
     ul.selecton {
         display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
         justify-content: center;
         margin: auto;
         text-align: center;
         font-size: 1.2em;
+    }
+    .l1 {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        margin: auto;
+    }
+    .liste-pizza {
+        display: flex;
+        width: 50%;
+        margin: auto;
+        justify-content: center;
     }
 }
