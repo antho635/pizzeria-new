@@ -1753,6 +1753,7 @@ section {
     background: #d81b60;
     border-radius: 2px;
     color: #FFFFFF;
+    padding: 0 20px;
 }
 
 .btn-fill-primary.secondary {
@@ -7538,12 +7539,6 @@ header .main-menu {
 
 /* CAROUSSELLE IMG */
 
-#box-img {
-    display: block;
-    width: 80%;
-    margin: auto;
-}
-
 .container-carroussel {
     margin: 4% auto;
     width: 210px;
@@ -7573,7 +7568,7 @@ header .main-menu {
     top: 10px;
     background: black;
     overflow: hidden;
-    border: solid 5px #d32f2f;
+    border: solid 5px #d81b60;
     border-radius: 30px;
 }
 
@@ -7617,6 +7612,7 @@ header .main-menu {
     -webkit-filter: grayscale(1);
     cursor: pointer;
     transition: all .5s ease;
+    background-size: cover;
 }
 
 #carousel img:hover {
@@ -7745,7 +7741,7 @@ header .main-menu {
     /* Remove borders */
     outline: none;
     /* Remove outline */
-    background: #ab000d;
+    background: #d81b60;
     /* Set a background color */
     color: #43a047;
     /* Text color */
@@ -7760,8 +7756,8 @@ header .main-menu {
 }
 
 #myBtn:hover {
-    background-color: #555;
+    background-color: #00695c;
     /* Add a dark-grey background on hover */
-    color: #ab000d;
+    color: #d81b60;
     /* Add a dark-red background on hover */
 }
