@@ -2243,6 +2243,10 @@ section {
 /*SELECTION*/
 
 ul.selecton {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: auto;
     text-align: center;
     font-size: 1.2em;
 }
