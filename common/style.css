@@ -7504,6 +7504,7 @@ header .main-menu {
   background: black;
   overflow: hidden;
   border: solid 5px #d32f2f;
+  border-radius: 30px;
 }
 
 #carousel figure:nth-child(1) {
