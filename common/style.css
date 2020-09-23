@@ -336,16 +336,6 @@ header ul.main-menu > li > a {
   padding: 0px 15px;
 }
 
-/* SEARCH AREA */
-header .right-area {
-  float: right;
-  height: 100%;
-  height: 70px;
-  padding: 10px 0;
-  position: relative;
-  font-size: 1.2em;
-}
-
 /* HAMBURGER ICON */
 header .menu-nav-icon {
   display: inline-block;
@@ -358,12 +348,7 @@ header .menu-nav-icon {
 
 /* DROPDOWN MENU STYLING */
 header .main-menu {
-  font-size: 1.1em;
-}
-
-header .main-menu li.drop-down {
-  position: relative;
-  text-align: left;
+  font-size: 1em;
 }
 
 header .main-menu li.drop-down > ul.drop-down-menu {
@@ -510,7 +495,7 @@ header .main-menu li.drop-down a.mouseover + ul.drop-down-menu {
 
 @media only screen and (max-width: 575px) {
   header {
-    padding: 15px 0 25px;
+    padding: 15px 25px;
   }
   header .right-area {
     width: 100%;
@@ -546,9 +531,6 @@ header .main-menu li.drop-down a.mouseover + ul.drop-down-menu {
   }
   header .info .icon {
     font-size: 25px;
-  }
-  header .info .right-area {
-    margin-left: 35px;
   }
 }
 
@@ -1666,6 +1648,12 @@ section {
   border: 1px solid #d81b60;
   color: #d81b60;
   border-radius: 2px;
+}
+
+@media screen and (max-width: 300px) {
+  .btn-brdr-primary {
+    margin-right: 20px;
+  }
 }
 
 .btn-brdr-primary:hover {
@@ -6472,11 +6460,6 @@ ul.icon li a {
   padding-right: 15px !important;
 }
 
-.plr-20 {
-  padding-left: 20px !important;
-  padding-right: 20px !important;
-}
-
 .plr-25 {
   padding-left: 25px !important;
   padding-right: 25px !important;
@@ -7480,99 +7463,130 @@ header .main-menu {
   text-align: center;
 }
 
-/* VAROUSSELLE IMG */
+/* CAROUSSELLE IMG */
 #box-img {
   display: block;
   width: 80%;
   margin: auto;
 }
 
-.diap {
-  /* modifiable */
-  float: left;
-  width: 48%;
-  margin: 1%;
-  /* pas modifiable */
-  overflow: hidden;
-  white-space: nowrap;
-  font-size: 0;
-  border-radius: 30px;
+.container-carroussel {
+  margin: 4% auto;
+  width: 210px;
+  height: 140px;
+  position: relative;
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
 }
 
-.diap img {
-  /* pas modifiable */
+#carousel {
   width: 100%;
-  font-size: 1rem;
+  height: 100%;
+  position: absolute;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-animation: rotation 40s infinite linear;
+          animation: rotation 40s infinite linear;
 }
 
-/* base de l'appel de l'animation :
-
- x = nombre d'image à faire défiler.
-.oX {
-  text-indent: -X00%;
-  animation: diapo 10s infinite steps(X);
-}
-.oX.slide {
-  text-indent: -X00%;
-  animation: diapo 10s infinite linear;
-}
-*/
-.o5 {
-  text-indent: -500%;
-  -webkit-animation: diapo 20s infinite steps(5);
-          animation: diapo 20s infinite steps(5);
+#carousel:hover {
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
 }
 
-.o6 {
-  text-indent: -600%;
-  -webkit-animation: diapo 20s infinite steps(6);
-          animation: diapo 20s infinite steps(6);
+#carousel figure {
+  display: block;
+  position: absolute;
+  width: 186px;
+  height: 130px;
+  left: 10px;
+  top: 10px;
+  background: black;
+  overflow: hidden;
+  border: solid 5px #d32f2f;
 }
 
-.o5.slide {
-  text-indent: -500%;
-  -webkit-animation: diapo 20s infinite linear;
-          animation: diapo 20s infinite linear;
+#carousel figure:nth-child(1) {
+  -webkit-transform: rotateY(0deg) translateZ(288px);
+          transform: rotateY(0deg) translateZ(288px);
 }
 
-.o6.slide {
-  text-indent: -600%;
-  -webkit-animation: diapo 20s infinite linear;
-          animation: diapo 20s infinite linear;
+#carousel figure:nth-child(2) {
+  -webkit-transform: rotateY(40deg) translateZ(288px);
+          transform: rotateY(40deg) translateZ(288px);
 }
 
-.o8 {
-  text-indent: -800%;
-  -webkit-animation: diapo 25s infinite steps(8);
-          animation: diapo 25s infinite steps(8);
+#carousel figure:nth-child(3) {
+  -webkit-transform: rotateY(80deg) translateZ(288px);
+          transform: rotateY(80deg) translateZ(288px);
 }
 
-.o8.slide {
-  text-indent: -800%;
-  -webkit-animation: diapo 25s infinite linear;
-          animation: diapo 25s infinite linear;
+#carousel figure:nth-child(4) {
+  -webkit-transform: rotateY(120deg) translateZ(288px);
+          transform: rotateY(120deg) translateZ(288px);
 }
 
-.rtl {
-  /* pas modifiable */
-  direction: rtl;
+#carousel figure:nth-child(5) {
+  -webkit-transform: rotateY(160deg) translateZ(288px);
+          transform: rotateY(160deg) translateZ(288px);
 }
 
-@-webkit-keyframes diapo {
-  /* pas modifiable */
+#carousel figure:nth-child(6) {
+  -webkit-transform: rotateY(200deg) translateZ(288px);
+          transform: rotateY(200deg) translateZ(288px);
+}
+
+#carousel figure:nth-child(7) {
+  -webkit-transform: rotateY(240deg) translateZ(288px);
+          transform: rotateY(240deg) translateZ(288px);
+}
+
+#carousel figure:nth-child(8) {
+  -webkit-transform: rotateY(280deg) translateZ(288px);
+          transform: rotateY(280deg) translateZ(288px);
+}
+
+#carousel figure:nth-child(9) {
+  -webkit-transform: rotateY(320deg) translateZ(288px);
+          transform: rotateY(320deg) translateZ(288px);
+}
+
+#carousel img {
+  -webkit-filter: grayscale(1);
+  cursor: pointer;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+#carousel img:hover {
+  -webkit-filter: grayscale(0);
+  -webkit-transform: scale(1.2, 1.2);
+          transform: scale(1.2, 1.2);
+}
+
+@-webkit-keyframes rotation {
+  from {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
   to {
-    text-indent: 0;
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
   }
 }
 
-@keyframes diapo {
-  /* pas modifiable */
+@keyframes rotation {
+  from {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
   to {
-    text-indent: 0;
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
   }
 }
 
-/* CAROUSSELLE IMG */
+/* !CAROUSSELLE IMG */
 @media screen and (min-width: 950px) {
   #entete {
     display: -webkit-box;
@@ -7642,7 +7656,9 @@ header .main-menu {
     display: flex;
     margin: auto;
   }
-  header .right-area {
+  header .right-area,
+  .center-area,
+  .left-area {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -7651,6 +7667,7 @@ header .main-menu {
             justify-content: center;
     margin: auto;
     padding: 0;
+    width: 33%;
   }
   header .main-menu {
     display: none;
@@ -7679,15 +7696,19 @@ header .main-menu {
 
 .left-area,
 .right-area,
-.main-menu {
+.center-area {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   margin: auto;
   align-items: center;
+  width: 100%;
 }
 
 /* ---------------------------------
