@@ -345,12 +345,19 @@ header ul.main-menu > li > a {
 
 /* HAMBURGER ICON */
 header .menu-nav-icon {
-  display: inline-block;
-  font-size: 30px;
-  line-height: 60px;
-  display: none;
-  cursor: pointer;
+  position: absolute;
+  font-size: 2em;
+  top: 15px;
+  right: 0;
+  padding: 0 20px;
   color: #fff;
+  overflow: hidden;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 /* DROPDOWN MENU STYLING */
