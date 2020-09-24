@@ -7810,6 +7810,7 @@ main {
     // relative to the top of the viewport once `sticky` takes over, or always if `fixed` fallback is used
     top: calc(100vh - 5rem);
     // ... styles written earlier
+    overflow: hidden;
 }
 
 

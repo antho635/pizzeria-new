@@ -7777,6 +7777,7 @@ main *:last-child {
   position: fixed;
   pointer-events: all;
   top: calc(100vh - 5rem);
+  overflow: hidden;
 }
 
 /* ---------------------------------
