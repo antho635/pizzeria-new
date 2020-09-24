@@ -7451,10 +7451,6 @@ header .menu-nav-icon {
   margin: auto;
 }
 
-header .right-area {
-  margin: auto;
-}
-
 header .main-menu {
   margin: auto;
 }
@@ -7689,19 +7685,6 @@ header .main-menu {
     display: flex;
     margin: auto;
   }
-  header .right-area,
-  .center-area,
-  .left-area {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    margin: auto;
-    padding: 0;
-    width: 33%;
-  }
   header .main-menu {
     display: none;
   }
@@ -7727,21 +7710,21 @@ header .main-menu {
       flex-wrap: nowrap;
 }
 
-.left-area,
-.right-area,
-.center-area {
+header .right-area,
+.center-area,
+.left-area {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin: auto;
+  padding: 0;
+  width: auto;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: auto;
-  align-items: center;
-  width: 100%;
 }
 
 /* ---------------------------------

@@ -7518,10 +7518,6 @@ header .menu-nav-icon {
     margin: auto;
 }
 
-header .right-area {
-    margin: auto;
-}
-
 header .main-menu {
     margin: auto;
 }
@@ -7707,15 +7703,6 @@ header .main-menu {
         display: flex;
         margin: auto;
     }
-    header .right-area,
-    .center-area,
-    .left-area {
-        display: flex;
-        justify-content: center;
-        margin: auto;
-        padding: 0;
-        width: 33%;
-    }
     header .main-menu {
         display: none;
     }
@@ -7735,18 +7722,18 @@ header .main-menu {
     height: auto;
     justify-content: space-between;
     margin: auto;
-    flex-wrap: nowrap
+    flex-wrap: nowrap;
 }
 
-.left-area,
-.right-area,
-.center-area {
+header .right-area,
+.center-area,
+.left-area {
     display: flex;
     justify-content: center;
-    align-items: center;
     margin: auto;
+    padding: 0;
+    width: auto;
     align-items: center;
-    width: 100%;
 }
 
 
