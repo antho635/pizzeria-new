@@ -22,34 +22,33 @@
 </head>
 
 <body>
-    <button onclick="topFunction()" id="myBtn" title="Go to top">Haut</button>
-    <header id="container-head">
+    <div id="top">
+        <header id="container-head">
+            <div class="left-area">
+                <a class="logo" href="#"><img src="images/logo-white.png" alt="Logo">
+                </a>
+            </div>
 
-        <div class="left-area">
-            <a class="logo" href="#"><img src="images/logo-white.png" alt="Logo">
-            </a>
-        </div>
-
-        <div class="center-area">
-            <h6>
-                <a class=" color-white btn-fill-primary" href="tel:+3347672****">COMMANDER</a>
-            </h6>
-        </div>
+            <div class="center-area">
+                <h6>
+                    <a class=" color-white btn-fill-primary" href="tel:+3347672****">COMMANDER</a>
+                </h6>
+            </div>
 
 
-        <!-- right-area -->
-        <div class="right-area">
-            <a class="menu-nav-icon" data-menu="#main-menu" href="#"><i class="ion-navicon"></i></a>
+            <!-- right-area -->
+            <div class="right-area">
+                <a class="menu-nav-icon" data-menu="#main-menu" href="#"><i class="ion-navicon"></i></a>
 
-            <ul class="main-menu font-mountainsre" id="main-menu">
-                <li class="color-li"><a href="#carte">La carte</a></li>
-            </ul>
-        </div>
+                <ul class="main-menu font-mountainsre" id="main-menu">
+                    <li class="color-li"><a href="#carte">La carte</a></li>
+                </ul>
+            </div>
 
-        <div class="clearfix"></div>
-        <!-- container -->
-    </header>
-
+            <div class="clearfix"></div>
+            <!-- container -->
+        </header>
+    </div>
 
     <section class="bg-1 h-900x main-slider pos-relative">
         <div class="triangle-up pos-bottom"></div>
@@ -837,6 +836,9 @@
             </p>
         </div>
         <!-- container -->
+        <div class="back-to-top-wrapper">
+            <a href="#top" class="back-to-top-link" aria-label="Scroll to Top">🔝</a>
+        </div>
     </footer>
 
     <!-- SCIPTS -->
